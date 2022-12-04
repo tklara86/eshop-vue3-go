@@ -1,7 +1,8 @@
 <script setup>
+import Nav from './components/Nav.vue';
 
 </script>
 
 <template>
-  <h1>eShop-vue3-go</h1>
+  <Nav></Nav>
 </template>
