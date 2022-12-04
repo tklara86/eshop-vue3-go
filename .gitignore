@@ -1,0 +1,29 @@
+# Logs
+/frontend/logs
+*.log
+/frontendnpm-debug.log*
+/frontendyarn-debug.log*
+/frontendyarn-error.log*
+/frontend/pnpm-debug.log*
+/frontend/lerna-debug.log*
+
+/.DS_Store
+/frontend/node_modules
+/frontend/.DS_Store
+/frontend/dist
+/frontend/dist-ssr
+/frontend/coverage
+*.local
+
+/frontend/cypress/videos/
+/frontend/cypress/screenshots/
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
