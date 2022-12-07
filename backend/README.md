@@ -1,1 +1,0 @@
-### Backend for eshop written in Go
