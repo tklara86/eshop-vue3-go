@@ -38,6 +38,13 @@ func main() {
 			PriceVATExcluded: money.New(105, money.GBP),
 			VAT:              money.New(200, money.GBP),
 		},
+		{
+			ID:               "3",
+			Name:             "test3",
+			Description:      "this is product",
+			PriceVATExcluded: money.New(105, money.GBP),
+			VAT:              money.New(200, money.GBP),
+		},
 	}
 
 	r.GET("/products", func(ctx *gin.Context) {
