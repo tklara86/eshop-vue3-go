@@ -5,16 +5,12 @@ import (
 
 	"github.com/Rhymond/go-money"
 	"github.com/gin-gonic/gin"
+	"github.com/tklara86/eshop-vue3-go/internal/category"
 	"github.com/tklara86/eshop-vue3-go/internal/product"
 )
 
 func main() {
 	r := gin.Default()
-	r.GET("/ping", func(ctx *gin.Context) {
-		ctx.JSON(http.StatusOK, gin.H{
-			"message": "pong",
-		})
-	})
 
 	products := []product.Product{
 		{
@@ -47,9 +43,27 @@ func main() {
 		},
 	}
 
-	r.GET("/products", func(ctx *gin.Context) {
-		ctx.JSON(http.StatusOK, products)
+	categories := []category.Category{
+		{
+			ID:          "23",
+			Name:        "categiory name 1",
+			Description: "this is desc",
+		},
+		{
+			ID:          "12",
+			Name:        "categiory name 2",
+			Description: "this is desc 2",
+		},
+	}
 
+	r.GET("/products", func(ctx *gin.Context) {
+		ctx.Header("Access-Control-Allow-Origin", "*")
+		ctx.JSON(http.StatusOK, products)
+	})
+
+	r.GET("/category", func(ctx *gin.Context) {
+		ctx.Header("Access-Control-Allow-Origin", "*")
+		ctx.JSON(http.StatusOK, categories)
 	})
 
 	r.Run(":9090")
