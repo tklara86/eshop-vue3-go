@@ -8,13 +8,13 @@ import (
 
 func main() {
 
-	server, err := server.New(server.Config{
+	s, err := server.New(server.Config{
 		Port: 9090,
 	})
 	if err != nil {
 		log.Fatalf("server not created. Exited with error: %s", err)
 	}
-	err = server.Run()
+	err = s.Run()
 	if err != nil {
 		log.Fatalf("sever did not start: %s", err)
 	}
