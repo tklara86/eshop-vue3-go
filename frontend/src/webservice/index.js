@@ -4,6 +4,6 @@ function getData(endpoint) {
   return axios.get(`http://localhost:9090/${endpoint}`)
 }
 
-export default {
+export default  {
   getData: getData
 }
