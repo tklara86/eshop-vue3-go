@@ -30,3 +30,5 @@
 
 # bin
 backend/bin/*
+
+backend/.serverless
