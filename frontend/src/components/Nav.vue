@@ -1,20 +1,3 @@
-<script setup>
-  import { onMounted } from 'vue'
-  import Webservice from '@/webservice';
-
-  onMounted(async() => {
-    Webservice.getData('category').then((res) => {
-      console.log(res.data)
-    }).catch((err) => {
-      console.log(err)
-    })
-  })
-
-
-
-
-</script>
-
 <template>
   <nav class="navbar navbar-expand-lg bg-light">
     <div class="container-fluid">
@@ -45,6 +28,7 @@
       </div>
     </div>
   </nav>  
+
 </template>
 
 <style scoped>
