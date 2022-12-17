@@ -1,0 +1,13 @@
+service: myTestService2
+provider:
+  name: aws
+  runtime: go1.x
+  region: eu-west-2
+package:
+  exclude:
+    - ./*
+  include:
+    - ./bin/**
+functions:
+  hello:
+    handler: bin/hello
