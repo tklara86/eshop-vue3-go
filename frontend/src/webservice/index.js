@@ -7,3 +7,4 @@ function getData(endpoint) {
 
 export default { getData };
 
+
