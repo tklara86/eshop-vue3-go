@@ -20,5 +20,3 @@ functions:
       - http:
           path: /categories
           method: get
-          
-          
